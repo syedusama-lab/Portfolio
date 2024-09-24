@@ -1,0 +1,147 @@
+@media (min-width: 1050px) {
+  .main_parent {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .child1 {
+    height: 100%;
+    width: 50%;
+    background-color: #eceffe;
+  }
+  .child2 {
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+  }
+  .child3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+  }
+  .child3 h1:nth-child(1) {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3c64fb;
+  }
+  .child3 h1:nth-child(2) {
+    font-size: 50px;
+    letter-spacing: 7px;
+    font-weight: 800;
+  }
+  .child3 h1:nth-child(3) {
+    font-size: 21px;
+    font-weight: 600;
+  }
+  .child3 h1:nth-child(3) span {
+    color: #3c64fb;
+  }
+}
+/* ----------- */
+
+/* ------------- */
+@media (min-width: 800px) and (max-width: 1050px) {
+  .main_parent {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .child1 {
+    height: 100%;
+    width: 50%;
+    background-color: #eceffe;
+  }
+  .child2 {
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+  }
+  .child3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+  }
+  .child3 h1:nth-child(1) {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3c64fb;
+  }
+  .child3 h1:nth-child(2) {
+    font-size: 50px;
+    letter-spacing: 7px;
+    font-weight: 800;
+  }
+  .child3 h1:nth-child(3) {
+    font-size: 21px;
+    font-weight: 600;
+  }
+  .child3 h1:nth-child(3) span {
+    color: #3c64fb;
+  }
+}
+
+@media (max-width: 800px) {
+  .main_parent {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .child1 {
+    height: 100%;
+    width: 50%;
+    background-color: #eceffe;
+  }
+  .child2 {
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+  }
+  .child3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+  }
+  .child3 h1:nth-child(1) {
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #3c64fb;
+  }
+  .child3 h1:nth-child(2) {
+    font-size: 37px;
+    letter-spacing: 8px;
+    font-weight: 800;
+  }
+  .child3 h1:nth-child(3) {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .child3 h1:nth-child(3) span {
+    color: #3c64fb;
+    letter-spacing: 2px;
+  }
+  .imagediv img {
+    display: none;
+  }
+}

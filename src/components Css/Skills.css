@@ -1,0 +1,357 @@
+.skill1 h1 {
+  color: #3e64ff;
+  text-decoration: underline;
+
+}
+
+@media (min-width: 1050px) {
+  .skills {
+    height: 105vh;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+  }
+  .skill1 {
+    height: 20vh;
+    width: 15%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    color: #3e64ff;
+  }
+  .skill2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .skill_child1 {
+    height: 80vh;
+    width: 35%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .LineProgressbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+  .linedata {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+  }
+  .linebar {
+    height: auto;
+    width: 100%;
+  }
+
+  .skill_child2 {
+    height: 80vh;
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .progressbarr1 {
+    height: 100%;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: rgb(243, 238, 238);
+  }
+  .circle {
+    height: auto;
+    width: 90%;
+    position: relative;
+  }
+  .tablet {
+    font-size: 135%;
+  }
+  .circle h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .progressbarr1 img {
+    width: 70px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1050px) {
+  .skills {
+    height: 100vh;
+    width: 100%;
+  }
+  .skill1 {
+    height: 20vh;
+    width: 15%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .skill2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .skill_child1 {
+    height: 80vh;
+    width: 35%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .LineProgressbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+  .linedata {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .linebar {
+    height: auto;
+    width: 100%;
+  }
+
+  .skill_child2 {
+    height: 80vh;
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .progressbarr1 {
+    height: 100%;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: rgb(243, 238, 238);
+  }
+  .tablet {
+    font-size: 110%;
+  }
+  .circle {
+    height: auto;
+    width: 90%;
+    position: relative;
+  }
+  .circle h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .progressbarr1 img {
+    width: 70px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+  .skills {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .skill1 {
+    height: 20vh;
+    width: 15%;
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+  .skill2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+  }
+  .skill_child1 {
+    height: 65vh;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .LineProgressbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+  }
+  .linedata {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .linebar {
+    height: auto;
+    width: 100%;
+  }
+
+  .skill_child2 {
+    top: 340px;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: absolute;
+  }
+  .progressbarr1 {
+    height: 230px;
+    width: 150px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: rgb(243, 238, 238);
+  }
+  .tablet {
+    display: none;
+  }
+  .circle {
+    height: auto;
+    width: 60%;
+    position: relative;
+  }
+  .circle h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .progressbarr1 img {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+  }
+}
+
+@media (max-width: 399px) {
+  .skills {
+    height: 167vh;
+    width: 100%;
+  }
+  .skill1 {
+    height: 20vh;
+    width: 15%;
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+  .skill2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+  }
+  .skill_child1 {
+    height: 65vh;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .LineProgressbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+  .linedata {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .linebar {
+    height: auto;
+    width: 100%;
+  }
+
+  .skill_child2 {
+    top: 100%;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: absolute;
+  }
+  .progressbarr1 {
+    height: 45%;
+    width: 45%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: rgb(243, 238, 238);
+  }
+  .tablet {
+    display: none;
+  }
+  .circle {
+    height: auto;
+    width: 80%;
+    position: relative;
+  }
+  .circle h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .progressbarr1 img {
+    width: 70px;
+    position: absolute;
+    top: 10px;
+  }
+}

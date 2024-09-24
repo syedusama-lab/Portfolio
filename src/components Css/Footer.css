@@ -1,0 +1,103 @@
+@media (min-width: 1050px) {
+  .FooterMain {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 20px;
+    border-top: 1px solid lightgray;
+  }
+  .footerchild {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerchild div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 120px;
+    padding-left: 40px;
+    padding-top: 25px;
+  }
+  .footerchild div:nth-child(1) {
+    border-right: 1.5px dashed gray;
+  }
+  .footerchild div:nth-child(2) {
+    border-right: 1.5px dashed gray;
+  }
+  h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+    color: #3e64ff;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1050px) {
+  .FooterMain {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 20px;
+    border-top: 1px solid lightgray;
+  }
+  .footerchild {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerchild div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 120px;
+    padding-left: 40px;
+    padding-top: 25px;
+  }
+  .footerchild div:nth-child(1) {
+    border-right: 1.5px dashed gray;
+  }
+  .footerchild div:nth-child(2) {
+    border-right: 1.5px dashed gray;
+  }
+  h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+    color: #3e64ff;
+  }
+}
+
+
+@media (max-width: 749px) {
+    .FooterMain {
+        height: auto;
+        width: 100%;
+        border-top: 1px solid lightgray;
+      }
+      .footerchild {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+      }
+      .footerchild div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 400px;
+        height: 120px;
+        padding-left: 40px;
+        padding-top: 25px;
+      }
+      h2 {
+        font-size: 27px;
+        margin-bottom: 10px;
+        color: #3e64ff;
+      }
+}
