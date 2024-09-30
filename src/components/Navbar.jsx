@@ -96,7 +96,6 @@ function Navbar() {
             e.preventDefault();
             scrollToSection(item.link);
           }}
-          // href={item.link}
           >
             <img src={item.img} alt="" />
             <li>{item.name}</li>

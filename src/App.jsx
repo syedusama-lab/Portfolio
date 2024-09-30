@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
     <div className="bodyMain">
