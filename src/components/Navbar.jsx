@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import '../styles/navbar.css'
+import "../styles/navbar.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import logo from "../assets/icons/portfolio.png";
 
 function Navbar() {
   gsap.registerPlugin(useGSAP);
@@ -80,7 +81,7 @@ function Navbar() {
   return (
     <div className="nav">
       <a className="nav_child1" href="">
-        <img src="src/assets/icons/portfolio.png" alt="Logo" />
+        <img src="./src/assets/icons/portfolio.png" alt="Logo" />
         <h2>Syed Portfolio</h2>
       </a>
 
@@ -91,11 +92,12 @@ function Navbar() {
       )}
       <div className={`nav_child2 ${menuOpen ? "active" : ""}`}>
         {aboutData.map((item, index) => (
-          <a key={index}
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection(item.link);
-          }}
+          <a
+            key={index}
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection(item.link);
+            }}
           >
             <img src={item.img} alt="" />
             <li>{item.name}</li>
