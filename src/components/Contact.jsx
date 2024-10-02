@@ -1,5 +1,5 @@
 import React from 'react'
-import "../components Css/Contact.css";
+import '../styles/contact.css'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

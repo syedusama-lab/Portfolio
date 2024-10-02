@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../components Css/Navbar.css";
+import '../styles/navbar.css'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

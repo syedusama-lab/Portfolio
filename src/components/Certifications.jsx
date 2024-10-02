@@ -1,5 +1,5 @@
 import React from "react";
-import "../components Css/Certifications.css";
+import '../styles/certifications.css'
 
 function Certifications() {
   let imageData = [

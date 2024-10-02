@@ -1,9 +1,9 @@
 import React from "react";
-import "../components Css/skills.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Circle, Line } from "rc-progress";
+import '../styles/skills.css'
 
 function Skills() {
   let skillsDataCircle = [

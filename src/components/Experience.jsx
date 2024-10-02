@@ -1,5 +1,5 @@
 import React from "react";
-import "../components Css/Experience.css";
+import '../styles/experience.css'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
