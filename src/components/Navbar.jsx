@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import logo from "../assets/icons/portfolio.png";
 
 function Navbar() {
   gsap.registerPlugin(useGSAP);
@@ -81,7 +80,7 @@ function Navbar() {
   return (
     <div className="nav">
       <a className="nav_child1" href="">
-        <img src="./src/assets/icons/portfolio.png" alt="Logo" />
+        <img src="/assets/portfolio.png" alt="Logo" />
         <h2>Syed Portfolio</h2>
       </a>
 
