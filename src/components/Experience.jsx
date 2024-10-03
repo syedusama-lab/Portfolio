@@ -93,20 +93,20 @@ function Experience() {
     <div id="experience" className="exp_main">
       <h1 className="exp">Experience</h1>
       {expData.map((data, index) => (
-        <div className="systems">
+        <div key={index} className="systems">
           <div className="heading">
             <h2>{data.company}</h2>
             <h3>{data.location}</h3>
           </div>
           <div className="details">
             <div className="details_child1">
-              <img src="src/assets/icons/exp.png" alt="" />
+              <img src="/assets/exp.png" alt="" />
             </div>
             <div className="details_child2">
               <h2>{data.date}</h2>
               <h1>{data.designation}</h1>
               {Object.values(data.working).map((work, index) => (
-                <li>{work}</li>
+                <li key={index}>{work}</li>
               ))}
             </div>
           </div>

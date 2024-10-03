@@ -54,12 +54,12 @@ function About() {
     });
   });
   useGSAP(() => {
-    gsap.from(".summary h4", {
+    gsap.from(".summary h5", {
       y: -50,
       opacity: -0.9,
       duration: 1,
       scrollTrigger: {
-        trigger: ".summary h4",
+        trigger: ".summary h5",
         scroller: "body",
         markers: false,
         start: "top 90%",
@@ -69,12 +69,12 @@ function About() {
     });
   });
   useGSAP(() => {
-    gsap.from(".summary p div:nth-child(1)", {
+    gsap.from(".id_data div:nth-child(1)", {
       y: 30,
       opacity: -1,
       duration: 0.5,
       scrollTrigger: {
-        trigger: ".summary p div:nth-child(1)",
+        trigger: ".id_data div:nth-child(1)",
         scroller: "body",
         markers: false,
         start: "top 90%",
@@ -84,12 +84,12 @@ function About() {
     });
   });
   useGSAP(() => {
-    gsap.from(".summary p div:nth-child(2)", {
+    gsap.from(".id_data div:nth-child(2)", {
       y: 30,
       opacity: -0.5,
       duration: 1,
       scrollTrigger: {
-        trigger: ".summary p div:nth-child(2)",
+        trigger: ".id_data div:nth-child(2)",
         scroller: "body",
         markers: false,
         start: "top 90%",
@@ -132,7 +132,7 @@ function About() {
   return (
     <div id="about" className="about_parent">
       <div className="imagediv">
-        <img src="src/assets/aboutme.jpg" alt="" />
+        <img src="/assets/aboutme.jpg" alt="" />
       </div>
       <div className="summary">
         <h1>About Me</h1>
@@ -143,14 +143,14 @@ function About() {
         </h5>
         {data.map((items, index) => {
           return (
-            <p key={index}>
+            <div className="id_data" key={index}>
               <div>{items.id}</div>
               <div>{items.data}</div>
-            </p>
+            </div>
           );
         })}
 
-        <a href="src/assets/cv/usama syed resume.pdf" download><button className="cvbtn" >Download CV</button></a>
+        <a href="/cv/usama syed resume.pdf" download><button className="cvbtn" >Download CV</button></a>
       </div>
     </div>
   );

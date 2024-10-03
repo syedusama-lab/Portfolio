@@ -4,32 +4,32 @@ import '../styles/certifications.css'
 function Certifications() {
   let imageData = [
     {
-      img: "src/assets/certificates/bi.png",
-      overlayImg: "src/assets/icons/transformatics.png",
+      img: "/certificates/bi.png",
+      overlayImg: "/assets/transformatics.png",
       title: "Microsoft Power BI",
       source: "Transformatics",
       intro:
         "Built an impressive Power BI dashboard by using Power Query Editor to clean and shape data, creating strong data models, using DAX for calculations, and adding custom visuals for a visually appealing and informative report.",
     },
     {
-      img: "src/assets/certificates/dashboard.png",
-      overlayImg: "src/assets/icons/coursera.png",
+      img: "/certificates/dashboard.png",
+      overlayImg: "public/assets/coursera.png",
       title: "DashBoard, Reports",
       source: "Google, Coursera",
       intro:
         "I gained expertise in using data to drive informed business decisions by creating interactive dashboards and detailed reports. The course focused on data visualization techniques, dashboard design principles, and generating actionable insights through reports.",
     },
     {
-      img: "src/assets/certificates/sql.png",
-      overlayImg: "src/assets/icons/coursera.png",
+      img: "/certificates/sql.png",
+      overlayImg: "public/assets/coursera.png",
       title: "SQL for Data Science",
       source: "UCDAVIS, Coursera",
       intro:
         "I learned to use SQL to analyze and manipulate data for data-driven decision-making. The course covered essential topics such as filtering, grouping, and joining datasets, along with advanced techniques like window functions and subqueries.",
     },
     {
-      img: "src/assets/certificates/query.png",
-      overlayImg: "src/assets/icons/coursera.png",
+      img: "/certificates/query.png",
+      overlayImg: "public/assets/coursera.png",
       title: "SQL, Querying Databases",
       source: "IBM, Coursera",
       intro:

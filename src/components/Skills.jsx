@@ -10,22 +10,22 @@ function Skills() {
     {
       name: "REACT",
       percent: "80",
-      img: "src/assets/icons/react.png",
+      img: "/assets/react.png",
     },
     {
       name: "JAVA SCRIPT",
       percent: "75",
-      img: "src/assets/icons/JSs.png",
+      img: "/assets/JSs.png",
     },
     {
       name: "HTML",
       percent: "90",
-      img: "src/assets/icons/html.png",
+      img: "/assets/html.png",
     },
     {
       name: "CSS",
       percent: "90",
-      img: "src/assets/icons/css.png",
+      img: "/assets/css.png",
     },
   ];
 
@@ -110,7 +110,7 @@ function Skills() {
       <div className="skill2">
         <div className="skill_child1">
           {skillsDataLine.map((items, index) => (
-            <div className="LineProgressbar">
+            <div key={index} className="LineProgressbar">
               <div className="linedata">
                 <h3>{items.name}</h3>
                 <h3>{items.percnt}%</h3>
@@ -129,7 +129,7 @@ function Skills() {
         </div>
         <div className="skill_child2">
           {skillsDataCircle.map((items, index) => (
-            <div className="progressbarr1">
+            <div key={index} className="progressbarr1">
               <h2 className="tablet">{items.name}</h2>
               <div className="circle">
                 <h2>{items.percent}%</h2>
