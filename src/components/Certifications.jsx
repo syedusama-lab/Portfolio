@@ -13,7 +13,7 @@ function Certifications() {
     },
     {
       img: "/certificates/dashboard.png",
-      overlayImg: "public/assets/coursera.png",
+      overlayImg: "/assets/coursera.png",
       title: "DashBoard, Reports",
       source: "Google, Coursera",
       intro:
@@ -21,7 +21,7 @@ function Certifications() {
     },
     {
       img: "/certificates/sql.png",
-      overlayImg: "public/assets/coursera.png",
+      overlayImg: "/assets/coursera.png",
       title: "SQL for Data Science",
       source: "UCDAVIS, Coursera",
       intro:
@@ -29,7 +29,7 @@ function Certifications() {
     },
     {
       img: "/certificates/query.png",
-      overlayImg: "public/assets/coursera.png",
+      overlayImg: "/assets/coursera.png",
       title: "SQL, Querying Databases",
       source: "IBM, Coursera",
       intro:

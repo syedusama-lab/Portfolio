@@ -39,19 +39,19 @@ function Navbar() {
   });
 
   const aboutData = [
-    { name: "about", link: "#about", img: "src/assets/icons/about.png" },
+    { name: "about", link: "#about", img: "/assets/about.png" },
     {
       name: "experience",
       link: "#experience",
-      img: "src/assets/icons/experience.png",
+      img: "/assets/experience.png",
     },
-    { name: "skills", link: "#skills", img: "src/assets/icons/skills.png" },
+    { name: "skills", link: "#skills", img: "/assets/skills.png" },
     {
       name: "certifications",
       link: "#certifications",
-      img: "src/assets/icons/certificate.png",
+      img: "/assets/certificate.png",
     },
-    { name: "contact", link: "#contact", img: "src/assets/icons/contact.png" },
+    { name: "contact", link: "#contact", img: "/assets/contact.png" },
   ];
 
   const [isMobile, setIsMobile] = useState(false); // State for mobile view
