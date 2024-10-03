@@ -4,7 +4,7 @@ import '../styles/certifications.css'
 function Certifications() {
   let imageData = [
     {
-      img: "/certificates/bi.png",
+      img: "/assets/certificates/bi.png",
       overlayImg: "/assets/transformatics.png",
       title: "Microsoft Power BI",
       source: "Transformatics",
