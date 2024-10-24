@@ -37,7 +37,7 @@
   display: flex; /* Default display for desktop */
   align-items: center;
   gap: 1vw;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 900;
   list-style: none;
 }
@@ -55,12 +55,7 @@
   align-items: center;
 }
 .nav_child2 a:hover{
-  background-color: #f3f3f4;
-  /*      top right bottom left */
-  padding: 15px 10px 15px 10px;
-  margin-top: -22px;
-  margin-bottom: -22px;
-  border-radius: 20px;
+  
   text-decoration: underline;
   color: #3E64FF;
 }
@@ -212,7 +207,7 @@
     display: none; 
     position: absolute;
     padding-top: 40px;
-    height: 270px;
+    height: 350px;
     top: 60px;
     right: 0;
     background-color: #fbfbfc;

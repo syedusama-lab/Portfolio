@@ -46,6 +46,7 @@ function Navbar() {
       img: "/assets/experience.png",
     },
     { name: "skills", link: "#skills", img: "/assets/skills.png" },
+    { name: "projects", link: "#projects", img: "/assets/project.png" },
     {
       name: "certifications",
       link: "#certifications",
