@@ -90,7 +90,7 @@ function Experience() {
             <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-blue-300 to-purple-400 p-1 w-10 h-10 sm:w-12 sm:h-12">
               <div className="flex items-center justify-center bg-white rounded-full w-full h-full">
                 <img
-                  src="public/assets/exp.png"
+                  src="/assets/exp.png"
                   alt="Experience Icon"
                   className="w-full h-full"
                 />
