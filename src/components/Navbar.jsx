@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <nav className="nav fixed top-0 w-full bg-white text-black p-2 shadow-md z-50">
       <div className="container mx-auto flex justify-between items-center md:pr-5 font-bold">
-        <div className="flex gap-x-1 ">
+        <div className="flex gap-x-1 md:pl-10">
           <div className="mr-0 md:h-12 md:w-12 h-10 w-10">
             <img src="/assets/portfolio.png" alt="" className="w-full" />
           </div>
