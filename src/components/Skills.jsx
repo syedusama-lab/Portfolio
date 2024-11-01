@@ -21,7 +21,7 @@ function Skills() {
   return (
     <div id="skills" className="skills bg-gradient-to-b bg-gray-100 py-10 border-b-[1.5px] border-b-gray-200">
       <div className="pl-[5px] md:pl-[10px] mb-8">
-        <h1 className="text-3xl font-bold text-[#3E64FF] ml-2 md:ml-10">
+        <h1 className="text-3xl font-bold text-[#3E64FF] ml-2 md:ml-10 underline">
           Skills
         </h1>
       </div>
