@@ -54,7 +54,7 @@ function About() {
         />
       </div>
       <div className="summary text-center md:text-left w-11/12 md:w-2/3 lg:w-1/2 flex flex-col gap-4">
-        <h1 className="text-4xl font-bold text-[#3E64FF]">About Me</h1>
+        <h1 className="text-4xl font-bold text-[#3E64FF] underline">About Me</h1>
         <h5 className="text-lg font-normal text-gray-600 leading-relaxed">
           I am a proficient software engineer with expertise in Microsoft Power
           BI, SQL, Oracle, and front-end development using React, JavaScript,

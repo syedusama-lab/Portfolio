@@ -73,7 +73,7 @@ function Experience() {
       id="experience"
       className="exp_main flex flex-col px-[5%] md:px-[10%] py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-b bg-gray-100 border-b-[1.5px] border-b-gray-200"
     >
-      <h1 className="exp text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-[#3E64FF]">
+      <h1 className="exp text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-[#3E64FF] underline">
         Experience
       </h1>
       <div className="relative w-full">

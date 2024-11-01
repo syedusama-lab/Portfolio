@@ -24,7 +24,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="container mx-auto bg-gray-100 py-10 border-b-[1.5px] border-b-gray-200">
-      <h2 className="text-3xl font-bold text-[#3E64FF] px-3 lg:px-12 mb-8">
+      <h2 className="text-3xl font-bold text-[#3E64FF] px-3 lg:px-12 mb-8 underline">
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-3 lg:px-12">
