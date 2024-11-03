@@ -10,7 +10,10 @@ import {
 
 const ContactUs = () => {
   return (
-    <footer id="contact" className="bg-gray-900 text-white p-6 md:p-10 lg:pt-10 lg:pl-40">
+    <footer
+      id="contact"
+      className="bg-gray-900 text-white p-6 md:p-10 lg:pt-10 lg:pl-40"
+    >
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Contact Details */}
         <div className="flex flex-col space-y-4">
@@ -23,9 +26,14 @@ const ContactUs = () => {
           </p>
           <p className="flex items-center space-x-3">
             <FaMapMarkerAlt />
-            <span>
+            <a
+              href="https://maps.app.goo.gl/Ne9rT3xWx8MiLByq8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
               Shabbir House, TV Colony, Swati Gate, Peshawar, Pakistan
-            </span>
+            </a>
           </p>
           <p className="flex items-center space-x-3">
             <FaPhoneAlt />
