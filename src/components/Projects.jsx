@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../certificatecss.css";
 
 const Projects = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null); // State to track hovered child
+  const [hoveredIndex, setHoveredIndex] = useState(null); 
 
   const imgData = [
     {
@@ -21,7 +21,7 @@ const Projects = () => {
 
   const handleClick = (link) => {
     if (link) {
-      window.open(link, "_blank"); // Open link in new tab
+      window.open(link, "_blank"); 
     }
   };
 
@@ -44,8 +44,8 @@ const Projects = () => {
                   : "opacity-100"
               } 
               ${hoveredIndex === index ? "scale-105" : ""}`}
-            onMouseEnter={() => setHoveredIndex(index)} // Set hovered index on mouse enter
-            onMouseLeave={() => setHoveredIndex(null)} // Reset hovered index on mouse leave
+            onMouseEnter={() => setHoveredIndex(index)} 
+            onMouseLeave={() => setHoveredIndex(null)} 
             onClick={() => handleClick(items.link)}
           >
             <img
