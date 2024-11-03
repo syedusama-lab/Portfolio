@@ -1,6 +1,9 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
+import "../certificatecss.css";
 
 const Projects = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null); // State to track hovered child
+
   const imgData = [
     {
       image: "/assets/ecommerce.png",
@@ -23,7 +26,10 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="container mx-auto bg-gray-100 py-10 border-b-[1.5px] border-b-gray-200">
+    <div
+      id="projects"
+      className="container mx-auto bg-gray-100 py-10 border-b-[1.5px] border-b-gray-200"
+    >
       <h2 className="text-3xl font-bold text-[#3E64FF] px-3 lg:px-12 mb-8 underline">
         Projects
       </h2>
@@ -31,7 +37,15 @@ const Projects = () => {
         {imgData.map((items, index) => (
           <div
             key={index}
-            className="relative rounded-lg overflow-hidden shadow-lg transform md:h-[350px] transition-transform hover:scale-105 cursor-pointer"
+            className={`child relative rounded-lg overflow-hidden shadow-lg transform md:h-[350px] transition-transform cursor-pointer 
+              ${
+                hoveredIndex !== null && hoveredIndex !== index
+                  ? "blur-sm"
+                  : "opacity-100"
+              } 
+              ${hoveredIndex === index ? "scale-105" : ""}`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set hovered index on mouse enter
+            onMouseLeave={() => setHoveredIndex(null)} // Reset hovered index on mouse leave
             onClick={() => handleClick(items.link)}
           >
             <img
