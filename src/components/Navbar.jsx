@@ -39,20 +39,20 @@ const Navbar = () => {
 
   return (
     <nav className="nav fixed top-0 w-full bg-white text-black p-2 shadow-md z-50">
-      <div className="container mx-auto flex justify-between items-center md:pr-5 font-bold">
-        <div onClick={() => scrollToSection("#main")} className="flex gap-x-1 md:pl-10 cursor-pointer hover:underline hover:text-[#3E64FF]">
+      <div className="container mx-auto flex justify-between items-center md:pr-10 font-bold">
+        <div
+          onClick={() => scrollToSection("#main")}
+          className="flex gap-x-1 md:pl-10 cursor-pointer hover:underline hover:text-[#3E64FF]"
+        >
           <div className="mr-0 md:h-12 md:w-12 h-10 w-10">
             <img src="/assets/portfolio.png" alt="" className="w-full" />
           </div>
-          <div
-            
-            className="text-2xl font-bold   md:pt-1 pt-0"
-          >
+          <div className="text-2xl font-bold   md:pt-1 pt-0">
             <span className="text-xl font-semibold">Syed Usama</span>
           </div>
         </div>
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-10">
+        <div className="hidden md:flex space-x-12">
           {aboutData.map((item, index) => (
             <a
               key={index}
@@ -60,7 +60,7 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection(item.link);
               }}
-              className="flex items-center space-x-1 cursor-pointer hover:text-[#3E64FF] hover:underline"
+              className="flex items-center space-x-1 cursor-pointer hover:text-[#3E64FF] hover:underline hover:scale-125 transition-transform duration-200 ease-in-out"
             >
               {item.img}
               <span>{item.name}</span>
