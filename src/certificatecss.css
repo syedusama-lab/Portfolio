@@ -1,8 +1,0 @@
-/* certificatecss.css */
-.child {
-  transition: transform 0.3s ease, filter 0.3s ease; /* Example transition for smooth effects */
-}
-
-.blur-sm {
-  filter: blur(4px); /* Adjust the blur value as needed */
-}

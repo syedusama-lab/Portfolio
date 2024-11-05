@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../certificatecss.css";
 
 const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -28,22 +27,22 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="container mx-auto bg-gray-100 py-10 border-b-[1.5px] border-b-gray-200"
+      className=" bg-gray-100 py-10 border-b-[1.5px] border-b-gray-200 w-full"
     >
       <h2 className="text-3xl font-bold text-[#3E64FF] px-3 lg:px-12 mb-8 underline">
         Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-3 lg:px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-3 md:px-10 lg:px-12">
         {imgData.map((items, index) => (
           <div
             key={index}
-            className={`child relative rounded-lg overflow-hidden shadow-lg transform md:h-[350px] transition-transform cursor-pointer 
+            className={`relative rounded-lg overflow-hidden shadow-lg transform md:h-[350px] transition-transform cursor-pointer 
               ${
                 hoveredIndex !== null && hoveredIndex !== index
-                  ? "blur-sm"
-                  : "opacity-100"
+                  ? "md:blur-sm"
+                  : "md:opacity-100"
               } 
-              ${hoveredIndex === index ? "scale-105" : ""}`}
+              ${hoveredIndex === index ? "md:scale-105" : ""}`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             onClick={() => handleClick(items.link)}
