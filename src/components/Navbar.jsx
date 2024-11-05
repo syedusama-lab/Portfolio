@@ -78,7 +78,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-gray-800 text-white p-4 space-y-2 absolute top-full left-0 w-full shadow-lg">
+        <div className="md:hidden bg-gray-200 text-gray-800 font-medium p-4 space-y-2 absolute top-full left-0 w-full shadow-lg rounded-b-2xl ">
           {aboutData.map((item, index) => (
             <a
               key={index}
@@ -86,7 +86,7 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection(item.link);
               }}
-              className="flex items-center space-x-1 hover:text-gray-400 cursor-pointer"
+              className="flex items-center pl-2 space-x-3 hover:text-gray-600 cursor-pointer"
             >
               {item.img}
               <span>{item.name}</span>
