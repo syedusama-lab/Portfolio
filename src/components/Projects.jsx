@@ -52,6 +52,9 @@ const Projects = () => {
               alt={items.heading}
               className="w-full h-full object-fill"
             />
+            <div className="md:hidden h-12 w-12 rounded-lg bg-gray-200 absolute z-99 top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+              <img src="/assets/open.png" alt="link" className="w-full h-full p-1" />
+            </div>
           </div>
         ))}
       </div>
