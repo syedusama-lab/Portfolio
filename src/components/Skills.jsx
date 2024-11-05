@@ -67,7 +67,6 @@ function Skills() {
         scrollTrigger: {
           trigger: skillsRef.current,
           start: "top 55%",
-          markers: true,
         },
       });
     });
