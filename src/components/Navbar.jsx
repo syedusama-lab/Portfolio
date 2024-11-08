@@ -86,7 +86,7 @@ const Navbar = ({ nightMode, setNightMode }) => {
         </div>
 
         {/* Hamburger Menu Icon for Mobile */}
-        <div className="md:hidden flex items-center space-x-4">
+        <div className="md:hidden flex items-center space-x-4 pr-3">
           <p
             className="cursor-pointer ml-[-12px]"
             onClick={() => {
