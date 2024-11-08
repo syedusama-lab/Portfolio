@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Projects = () => {
+const Projects = ({ nightMode }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const imgData = [
@@ -27,7 +27,11 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className=" bg-gray-100 py-10 border-b-[1.5px] border-b-gray-200 w-full"
+      className={`${
+        nightMode
+          ? "bg-gray-900 border-b-gray-200"
+          : "bg-gray-100 border-b-gray-900"
+      } py-10 border-b-[1.5px]  w-full`}
     >
       <h2 className="text-3xl font-bold text-[#3E64FF] px-3 lg:px-12 mb-8 underline">
         Projects
@@ -53,7 +57,11 @@ const Projects = () => {
               className="w-full h-full object-fill"
             />
             <div className="md:hidden h-12 w-12 rounded-lg bg-gray-200 absolute z-99 top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
-              <img src="/assets/open.png" alt="link" className="w-full h-full p-1" />
+              <img
+                src="/assets/open.png"
+                alt="link"
+                className="w-full h-full p-1"
+              />
             </div>
           </div>
         ))}

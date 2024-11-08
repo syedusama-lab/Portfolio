@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function Experience() {
+function Experience({ nightMode }) {
   gsap.registerPlugin(ScrollTrigger);
 
   const expData = [
@@ -71,7 +71,11 @@ function Experience() {
   return (
     <div
       id="experience"
-      className="exp_main flex flex-col px-[5%] md:px-[10%] py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-b bg-gray-100 border-b-[1.5px] border-b-gray-200"
+      className={`exp_main flex flex-col px-[5%] md:px-[10%] py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-b ${
+        nightMode
+          ? "bg-gray-900 border-b-gray-200"
+          : "bg-gray-100 border-b-gray-900"
+      } border-b-[1.5px] `}
     >
       <h1 className="exp text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-[#3E64FF] underline">
         Experience
@@ -98,23 +102,39 @@ function Experience() {
             </div>
 
             {/* Experience details */}
-            <div className="bg-white rounded-lg shadow-lg w-full p-4 sm:p-6 border border-transparent bg-clip-padding bg-opacity-80">
+            <div
+              className={`${
+                nightMode ? "bg-black" : "bg-white"
+              }  rounded-lg shadow-lg w-full p-4 sm:p-6 border border-transparent bg-clip-padding bg-opacity-80`}
+            >
               <div className="heading flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 sm:mb-4">
-                <h2 className="text-xl sm:text-2xl font-semibold text-gray-700">
+                <h2
+                  className={`text-xl sm:text-2xl font-semibold ${
+                    nightMode ? "text-gray-100" : "text-gray-700"
+                  }  `}
+                >
                   {data.company}
                 </h2>
-                <h3 className="text-gray-500 text-xs sm:text-sm mt-1 sm:mt-0">
+                <h3
+                  className={`${
+                    nightMode ? "text-gray-400" : "text-gray-500"
+                  }  text-xs sm:text-sm mt-1 sm:mt-0`}
+                >
                   {data.location}
                 </h3>
               </div>
               <div className="details text-gray-600">
-                <h2 className="text-gray-500 text-xs sm:text-sm mb-1 sm:mb-2">
+                <h2
+                  className={`${
+                    nightMode ? "text-gray-400" : "text-gray-500"
+                  } text-xs sm:text-sm mb-1 sm:mb-2`}
+                >
                   {data.date}
                 </h2>
-                <h1 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
+                <h1 className={`text-lg sm:text-xl font-semibold ${nightMode ? "text-gray-100" : "text-gray-800"}  mb-2`}>
                   {data.designation}
                 </h1>
-                <ul className="list-disc ml-4 sm:ml-5 space-y-1 text-gray-600 text-sm sm:text-base">
+                <ul className={`list-disc ml-4 sm:ml-5 space-y-1 ${nightMode ? "text-gray-300" : "text-gray-600"}  text-sm sm:text-base`}>
                   {Object.values(data.working).map((work, idx) => (
                     <li
                       key={idx}

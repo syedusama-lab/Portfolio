@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function About() {
+function About({ nightMode }) {
   gsap.registerPlugin(ScrollTrigger);
 
   const data = [
@@ -44,7 +44,11 @@ function About() {
   return (
     <div
       id="about"
-      className=" about_parent flex flex-col md:flex-row items-center justify-center py-10 md:py-16 lg:py-20 gap-6 md:gap-12 bg-gray-100 border-b-[1.5px] border-b-gray-200"
+      className={` about_parent flex flex-col md:flex-row items-center justify-center py-10 md:py-16 lg:py-20 gap-6 md:gap-12 border-b-[1.5px] ${
+        nightMode
+          ? "bg-gray-900 border-b-gray-200"
+          : "bg-gray-100 border-b-gray-900"
+      }   `}
     >
       <div className="imagediv hidden md:block w-11/12 md:w-[50%] lg:w-[35%] lg:h-[60vh] rounded-lg overflow-hidden shadow-lg">
         <img
@@ -54,16 +58,22 @@ function About() {
         />
       </div>
       <div className="summary text-center md:text-left w-11/12 md:w-2/3 lg:w-1/2 flex flex-col gap-4">
-        <h1 className="text-4xl font-bold text-[#3E64FF] underline">About Me</h1>
-        <h5 className="text-lg font-normal text-gray-600 leading-relaxed">
+        <h1 className="text-4xl font-bold text-[#3E64FF] underline">
+          About Me
+        </h1>
+        <h5
+          className={`text-lg font-normal ${
+            nightMode ? "text-white" : "text-gray-600"
+          } leading-relaxed`}
+        >
           I am a proficient software engineer with expertise in Microsoft Power
           BI, SQL, Oracle, and front-end development using React, JavaScript,
           HTML, and CSS.
         </h5>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-base font-medium text-gray-700">
+        <div className={`grid grid-cols-1 sm:grid-cols-2 gap-2 text-base font-medium ${nightMode ? "text-gray-300" : "text-gray-700"}`}>
           {data.map((item, index) => (
             <div className="id_data flex items-center" key={index}>
-              <div className="font-bold text-gray-800 ">{item.id}</div>
+              <div className={`font-bold ${nightMode ? "text-gray-400" : "text-gray-800"}  `}>{item.id}</div>
               <div className="ml-2">{item.data}</div>
             </div>
           ))}

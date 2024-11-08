@@ -13,10 +13,11 @@ import {
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { MdOutlineWbSunny, MdSunny } from "react-icons/md";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-const Navbar = () => {
+const Navbar = ({ nightMode, setNightMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -37,22 +38,29 @@ const Navbar = () => {
     setMenuOpen(false);
   };
 
+  const setNightModeFun = () => {
+    setNightMode(!nightMode);
+  };
   return (
-    <nav className="nav fixed top-0 w-full bg-white text-black p-2 shadow-md z-50">
-      <div className="container mx-auto flex justify-between items-center md:pr-10 font-bold">
+    <nav
+      className={`nav fixed top-0 w-full ${
+        nightMode ? "bg-gray-900 text-white" : "bg-white text-black"
+      }   p-2 shadow-md z-50`}
+    >
+      <div className="mx-auto flex justify-between items-center md:pr-10 font-bold">
         <div
           onClick={() => scrollToSection("#main")}
-          className="flex gap-x-1 md:pl-10 cursor-pointer hover:underline hover:text-[#3E64FF]"
+          className="flex gap-x-1 md:ml-5 lg:pl-10 cursor-pointer hover:underline hover:text-[#3E64FF]"
         >
           <div className="mr-0 md:h-12 md:w-12 h-10 w-10">
-            <img src="/assets/portfolio.png" alt="" className="w-full" />
+            <img src="/assets/portfolio1.png" alt="" className="w-full" />
           </div>
-          <div className="text-2xl font-bold   md:pt-1 pt-0">
-            <span className="text-xl font-semibold">Syed Usama</span>
+          <div className="md:text-[14px] lg:text-[17px] flex items-center md:pt-1 pt-0">
+            <span className=" font-bold">Syed Usama</span>
           </div>
         </div>
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-12">
+        <div className="hidden md:flex items-center md:space-x-5 lg:space-x-9">
           {aboutData.map((item, index) => (
             <a
               key={index}
@@ -60,16 +68,32 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection(item.link);
               }}
-              className="flex items-center space-x-1 cursor-pointer hover:text-[#3E64FF] hover:underline hover:scale-125 transition-transform duration-200 ease-in-out"
+              className="flex md:text-[13.5px] lg:text-[17px] items-center space-x-2 cursor-pointer hover:text-[#3E64FF] hover:underline hover:scale-125 transition-transform duration-200 ease-in-out"
             >
               {item.img}
               <span>{item.name}</span>
             </a>
           ))}
+          <p
+            className="cursor-pointer ml-[-12px]"
+            onClick={() => {
+              setNightModeFun();
+            }}
+          >
+            {nightMode ? <MdOutlineWbSunny /> : <MdSunny />}
+          </p>
         </div>
 
         {/* Hamburger Menu Icon for Mobile */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center space-x-4">
+        <p
+            className="cursor-pointer ml-[-12px]"
+            onClick={() => {
+              setNightModeFun();
+            }}
+          >
+            {nightMode ? <MdOutlineWbSunny /> : <MdSunny />}
+          </p>
           <button onClick={toggleMenu} className="focus:outline-none">
             {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>

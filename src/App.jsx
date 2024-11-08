@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import Certifications from "./components/Certification";
 import ContactUs from "./components/ContactUs";
 import Lenis from "@studio-freight/lenis";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   useEffect(() => {
@@ -29,15 +29,18 @@ function App() {
     };
   }, []);
 
+  const [nightMode,setNightMode] = useState(false);
+
   return (
+
     <div className="App mt-14">
-      <Navbar />
+      <Navbar nightMode={nightMode} setNightMode={setNightMode}/>
       <Main />
-      <About />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Certifications />
+      <About nightMode={nightMode} />
+      <Experience nightMode={nightMode} />
+      <Skills nightMode={nightMode} />
+      <Projects nightMode={nightMode} />
+      <Certifications nightMode={nightMode} />
       <ContactUs />
     </div>
   );

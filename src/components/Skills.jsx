@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Skills() {
+function Skills({ nightMode }) {
   const skillsRef = useRef(null); // Reference to the skills section
 
   let skillsDataCircle = [
@@ -76,7 +76,11 @@ function Skills() {
     <div
       ref={skillsRef}
       id="skills"
-      className="skills bg-gradient-to-b bg-gray-100 py-10 border-b-[1.5px] border-b-gray-200"
+      className={`skills bg-gradient-to-b ${
+        nightMode
+          ? "bg-gray-900 border-b-gray-200"
+          : "bg-gray-100 border-b-gray-900"
+      }  py-10 border-b-[1.5px] `}
     >
       <div className="pl-[5px] md:pl-[10px] mb-8">
         <h1 className="text-3xl font-bold text-[#3E64FF] ml-2 md:ml-10 underline">
@@ -85,10 +89,18 @@ function Skills() {
       </div>
 
       <div className="skill2 flex flex-col lg:flex-row gap-8 justify-center items-start px-2 lg:px-12">
-        <div className="skill_child1 w-full lg:w-1/2 space-y-6 bg-white p-3 rounded-xl">
+        <div
+          className={`skill_child1 w-full lg:w-1/2 space-y-6 ${
+            nightMode ? "bg-gray-800" : "bg-white"
+          }  p-3 rounded-xl`}
+        >
           {skillsDataLine.map((item, index) => (
             <div key={index} className="LineProgressbar">
-              <div className="linedata flex justify-between text-gray-700 mb-1">
+              <div
+                className={`linedata flex justify-between ${
+                  nightMode ? "text-gray-200" : "text-gray-700"
+                }  mb-1`}
+              >
                 <h3 className="font-medium">{item.name}</h3>
                 <h3>{animatedPercents.linePercents[index].toFixed(0)}%</h3>
               </div>
@@ -110,9 +122,17 @@ function Skills() {
           {skillsDataCircle.map((item, index) => (
             <div
               key={index}
-              className="progressbarr1 flex justify-evenly flex-col items-center text-center bg-white rounded-lg shadow-lg px-2 md:h-[270px] md:w-[135px] h-[250px] w-[120px]"
+              className={`progressbarr1 flex justify-evenly flex-col items-center text-center ${
+                nightMode ? "bg-gray-800" : "bg-white"
+              }  rounded-lg shadow-lg px-2 md:h-[270px] md:w-[135px] h-[250px] w-[120px]`}
             >
-              <h2 className="font-semibold text-gray-700">{item.name}</h2>
+              <h2
+                className={`font-semibold ${
+                  nightMode ? "text-gray-200" : "text-gray-700"
+                } `}
+              >
+                {item.name}
+              </h2>
               <div className="circle relative">
                 <Circle
                   percent={animatedPercents.circlePercents[index]}
@@ -122,7 +142,9 @@ function Skills() {
                   strokeColor="#3E64FF"
                   className="w-20 h-20 md:w-24 md:h-24"
                 />
-                <span className="absolute inset-0 flex items-center justify-center text-lg font-semibold text-gray-800">
+                <span
+                  className={`absolute inset-0 flex items-center justify-center text-lg font-semibold ${nightMode ? "text-gray-200" : "text-gray-800"} `}
+                >
                   {animatedPercents.circlePercents[index].toFixed(0)}%
                 </span>
               </div>
