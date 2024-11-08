@@ -29,12 +29,36 @@ function App() {
     };
   }, []);
 
-  const [nightMode,setNightMode] = useState(false);
+  const [nightMode, setNightMode] = useState(false);
+  const preventSelection = (e) => e.preventDefault();
+  const handleKeyDown = (e) => {
+    if (
+      (e.ctrlKey && e.key === "c") ||
+      (e.ctrlKey && e.key === "x") ||
+      (e.ctrlKey && e.key === "v") ||
+      (e.ctrlKey && e.key === "a")
+    ) {
+      e.preventDefault();
+    }
+  };
+  const noSelectStyle = {
+    userSelect: "none",
+    WebkitUserSelect: "none",
+    MozUserSelect: "none",
+    msUserSelect: "none",
+  };
 
   return (
-
-    <div className="App mt-14">
-      <Navbar nightMode={nightMode} setNightMode={setNightMode}/>
+    <div
+      onContextMenu={(e) => e.preventDefault()}
+      onCopy={(e) => e.preventDefault()}
+      onMouseDown={preventSelection}
+      onMouseUp={preventSelection}
+      onKeyDown={handleKeyDown}
+      style={noSelectStyle}
+      className="App mt-14"
+    >
+      <Navbar nightMode={nightMode} setNightMode={setNightMode} />
       <Main />
       <About nightMode={nightMode} />
       <Experience nightMode={nightMode} />
