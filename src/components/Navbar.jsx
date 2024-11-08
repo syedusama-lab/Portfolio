@@ -51,7 +51,7 @@ const Navbar = ({ nightMode, setNightMode }) => {
       <div className="mx-auto flex justify-between items-center md:pr-2 lg:pr-8 font-bold">
         <div
           onClick={() => scrollToSection("#main")}
-          className="flex gap-x-1 ml-3 md:ml-5 lg:pl-10 cursor-pointer hover:underline hover:text-[#3E64FF]"
+          className="flex gap-x-1 ml-3 md:ml-5 lg:pl-4 cursor-pointer hover:underline hover:text-[#3E64FF]"
         >
           <div className="mr-0 md:h-12 md:w-12 h-10 w-10">
             <img src="/assets/portfolio1.png" alt="" className="w-full" />
