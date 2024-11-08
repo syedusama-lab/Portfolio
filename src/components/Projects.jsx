@@ -27,10 +27,10 @@ const Projects = ({ nightMode }) => {
   return (
     <div
       id="projects"
-      className={`${
+      className={`transition-colors duration-300 ease-in-out ${
         nightMode
-          ? "bg-gray-900 border-b-gray-200"
-          : "bg-gray-100 border-b-gray-900"
+          ? "bg-gray-900 border-b-gray-600"
+          : "bg-gray-100 border-b-gray-300"
       } py-10 border-b-[1.5px]  w-full`}
     >
       <h2 className="text-3xl font-bold text-[#3E64FF] px-3 lg:px-12 mb-8 underline">

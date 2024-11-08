@@ -44,14 +44,14 @@ const Navbar = ({ nightMode, setNightMode }) => {
   };
   return (
     <nav
-      className={`nav fixed top-0 w-full ${
+      className={`nav fixed top-0 w-full transition-colors duration-300 ease-in-out ${
         nightMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }   p-2 shadow-md z-50`}
     >
-      <div className="mx-auto flex justify-between items-center md:pr-10 font-bold">
+      <div className="mx-auto flex justify-between items-center md:pr-2 lg:pr-8 font-bold">
         <div
           onClick={() => scrollToSection("#main")}
-          className="flex gap-x-1 md:ml-5 lg:pl-10 cursor-pointer hover:underline hover:text-[#3E64FF]"
+          className="flex gap-x-1 ml-3 md:ml-5 lg:pl-10 cursor-pointer hover:underline hover:text-[#3E64FF]"
         >
           <div className="mr-0 md:h-12 md:w-12 h-10 w-10">
             <img src="/assets/portfolio1.png" alt="" className="w-full" />
@@ -61,7 +61,7 @@ const Navbar = ({ nightMode, setNightMode }) => {
           </div>
         </div>
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center md:space-x-5 lg:space-x-9">
+        <div className="hidden md:flex items-center md:space-x-3 lg:space-x-9">
           {aboutData.map((item, index) => (
             <a
               key={index}

@@ -44,10 +44,10 @@ function About({ nightMode }) {
   return (
     <div
       id="about"
-      className={` about_parent flex flex-col md:flex-row items-center justify-center py-10 md:py-16 lg:py-20 gap-6 md:gap-12 border-b-[1.5px] ${
+      className={` about_parent flex flex-col md:flex-row items-center justify-center py-10 md:py-16 lg:py-20 gap-6 md:gap-12 border-b-[1.5px] transition-colors duration-300 ease-in-out ${
         nightMode
-          ? "bg-gray-900 border-b-gray-200"
-          : "bg-gray-100 border-b-gray-900"
+          ? "bg-gray-900 border-b-gray-600"
+          : "bg-gray-100 border-b-gray-300"
       }   `}
     >
       <div className="imagediv hidden md:block w-11/12 md:w-[50%] lg:w-[35%] lg:h-[60vh] rounded-lg overflow-hidden shadow-lg">
@@ -70,10 +70,20 @@ function About({ nightMode }) {
           BI, SQL, Oracle, and front-end development using React, JavaScript,
           HTML, and CSS.
         </h5>
-        <div className={`grid grid-cols-1 sm:grid-cols-2 gap-2 text-base font-medium ${nightMode ? "text-gray-300" : "text-gray-700"}`}>
+        <div
+          className={`grid grid-cols-1 sm:grid-cols-2 gap-2 text-base font-medium ${
+            nightMode ? "text-gray-300" : "text-gray-700"
+          }`}
+        >
           {data.map((item, index) => (
             <div className="id_data flex items-center" key={index}>
-              <div className={`font-bold ${nightMode ? "text-gray-400" : "text-gray-800"}  `}>{item.id}</div>
+              <div
+                className={`font-bold ${
+                  nightMode ? "text-gray-400" : "text-gray-800"
+                }  `}
+              >
+                {item.id}
+              </div>
               <div className="ml-2">{item.data}</div>
             </div>
           ))}

@@ -41,7 +41,7 @@ function App() {
       <Skills nightMode={nightMode} />
       <Projects nightMode={nightMode} />
       <Certifications nightMode={nightMode} />
-      <ContactUs />
+      <ContactUs nightMode={nightMode} />
     </div>
   );
 }

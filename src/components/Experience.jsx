@@ -71,10 +71,10 @@ function Experience({ nightMode }) {
   return (
     <div
       id="experience"
-      className={`exp_main flex flex-col px-[5%] md:px-[10%] py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-b ${
+      className={`exp_main flex flex-col px-[5%] md:px-[10%] py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-b transition-colors duration-300 ease-in-out ${
         nightMode
-          ? "bg-gray-900 border-b-gray-200"
-          : "bg-gray-100 border-b-gray-900"
+          ? "bg-gray-900 border-b-gray-600"
+          : "bg-gray-100 border-b-gray-300"
       } border-b-[1.5px] `}
     >
       <h1 className="exp text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-[#3E64FF] underline">

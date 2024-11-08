@@ -8,11 +8,13 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-const ContactUs = () => {
+const ContactUs = ({ nightMode }) => {
   return (
     <footer
       id="contact"
-      className="bg-gray-900 text-white p-6 md:p-10 lg:pt-10 lg:pl-40"
+      className={`transition-colors duration-300 ease-in-out ${
+        nightMode ? "bg-gray-900 text-white" : "bg-gray-50 text-black"
+      }   p-6 md:p-10 lg:pt-10 lg:pl-40`}
     >
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Contact Details */}
@@ -51,7 +53,7 @@ const ContactUs = () => {
               href="https://www.linkedin.com/in/syed-usama-186b22142/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-blue-500 transition-colors"
+              className={`${nightMode ? "text-white" : "text-black"}  hover:text-blue-500 transition-colors`}
             >
               <FaLinkedin size={24} />
             </a>
@@ -59,7 +61,7 @@ const ContactUs = () => {
               href="https://github.com/syedusama-lab"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition-colors"
+              className={`${nightMode ? "text-white" : "text-black"}  hover:text-gray-500 transition-colors`}
             >
               <FaGithub size={24} />
             </a>
@@ -98,7 +100,7 @@ const ContactUs = () => {
           </ul>
         </div>
       </div>
-      <div className="text-center mt-6 text-gray-400 text-sm">
+      <div className="text-center mt-6 text-gray-500 text-sm">
         © {new Date().getFullYear()} Syed Usama. All rights reserved.
       </div>
     </footer>

@@ -37,7 +37,7 @@ function Certifications({nightMode}) {
   ];
 
   return (
-    <div id="certifications" className={`w-full p-2 md:p-6 lg:p-12 ${nightMode ? "bg-gray-900  border-b-[1.5px]" : "bg-gray-100"}`}>
+    <div id="certifications" className={`w-full p-2 md:p-6 lg:p-12 transition-colors duration-300 ease-in-out border-b-[1.5px] ${nightMode ? "bg-gray-900 border-b-gray-600 " : "bg-gray-100 border-b-gray-300"}`}>
       <h1 className="text-3xl font-bold text-[#3E64FF] mb-8 underline">
         Certifications
       </h1>

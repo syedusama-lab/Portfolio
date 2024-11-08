@@ -76,10 +76,10 @@ function Skills({ nightMode }) {
     <div
       ref={skillsRef}
       id="skills"
-      className={`skills bg-gradient-to-b ${
+      className={`skills bg-gradient-to-b transition-colors duration-300 ease-in-out ${
         nightMode
-          ? "bg-gray-900 border-b-gray-200"
-          : "bg-gray-100 border-b-gray-900"
+          ? "bg-gray-900 border-b-gray-600"
+          : "bg-gray-100 border-b-gray-300"
       }  py-10 border-b-[1.5px] `}
     >
       <div className="pl-[5px] md:pl-[10px] mb-8">
