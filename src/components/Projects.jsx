@@ -29,7 +29,7 @@ const Projects = ({ nightMode }) => {
       id="projects"
       className={`transition-colors duration-300 ease-in-out ${
         nightMode
-          ? "bg-gray-900 border-b-gray-600"
+          ? "bg-[#1F1F1F] border-b-gray-600"
           : "bg-gray-100 border-b-gray-300"
       } py-10 border-b-[1.5px]  w-full`}
     >
@@ -40,10 +40,10 @@ const Projects = ({ nightMode }) => {
         {imgData.map((items, index) => (
           <div
             key={index}
-            className={`relative rounded-lg overflow-hidden shadow-lg transform md:h-[350px] transition-transform cursor-pointer 
+            className={`relative rounded-lg overflow-hidden shadow-lg transform md:h-[350px] transition-transform duration-500 cursor-pointer 
               ${
                 hoveredIndex !== null && hoveredIndex !== index
-                  ? "md:blur-sm"
+                  ? "md:blur-sm duration-300"
                   : "md:opacity-100"
               } 
               ${hoveredIndex === index ? "md:scale-105" : ""}`}

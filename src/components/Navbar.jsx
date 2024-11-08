@@ -44,8 +44,8 @@ const Navbar = ({ nightMode, setNightMode }) => {
   };
   return (
     <nav
-      className={`nav fixed top-0 w-full transition-colors duration-300 ease-in-out ${
-        nightMode ? "bg-gray-900 text-white" : "bg-white text-black"
+      className={`nav fixed top-0 md:top-2 md:left-[1%] w-full md:w-[98%] md:rounded-xl transition-colors duration-300 ease-in-out ${
+        nightMode ? "bg-[#1F1F1F] text-white border border-black" : "bg-white text-black"
       }   p-2 shadow-md z-50`}
     >
       <div className="mx-auto flex justify-between items-center md:pr-2 lg:pr-8 font-bold">
@@ -77,6 +77,7 @@ const Navbar = ({ nightMode, setNightMode }) => {
           ))}
           <p
             className="cursor-pointer ml-[-12px]"
+            title={nightMode ? "Light Mode" : "Night Mode"}
             onClick={() => {
               setNightModeFun();
             }}

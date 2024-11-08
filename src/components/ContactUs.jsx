@@ -13,7 +13,7 @@ const ContactUs = ({ nightMode }) => {
     <footer
       id="contact"
       className={`transition-colors duration-300 ease-in-out ${
-        nightMode ? "bg-gray-900 text-white" : "bg-gray-50 text-black"
+        nightMode ? "bg-[#1a1919] text-white" : "bg-gray-50 text-black"
       }   p-6 md:p-10 lg:pt-10 lg:pl-40`}
     >
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

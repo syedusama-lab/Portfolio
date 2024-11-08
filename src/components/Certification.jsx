@@ -37,7 +37,7 @@ function Certifications({nightMode}) {
   ];
 
   return (
-    <div id="certifications" className={`w-full p-2 md:p-6 lg:p-12 transition-colors duration-300 ease-in-out border-b-[1.5px] ${nightMode ? "bg-gray-900 border-b-gray-600 " : "bg-gray-100 border-b-gray-300"}`}>
+    <div id="certifications" className={`w-full p-2 md:p-6 lg:p-12 transition-colors duration-300 ease-in-out border-b-[1.5px] ${nightMode ? "bg-[#1F1F1F] border-b-gray-600 " : "bg-gray-100 border-b-gray-300"}`}>
       <h1 className="text-3xl font-bold text-[#3E64FF] mb-8 underline">
         Certifications
       </h1>
@@ -48,7 +48,7 @@ function Certifications({nightMode}) {
             className="relative flex-col items-center justify-center rounded-3xl shadow-lg p-6 md:p-0 aspect-w-1 aspect-h-1 h-[170px] md:h-[320px] overflow-hidden transition-transform transform hover:cursor-pointer"
           >
             {/* Content of parent div, visible only on medium and larger screens */}
-            <div className={`hidden md:flex flex-col items-center  ${nightMode ? "bg-gray-700" : "bg-blue-400"}  text-white transition-opacity duration-300 ease-in-out hover:opacity-0 relative w-full h-full p-4 rounded-3xl `}>
+            <div className={`hidden md:flex flex-col items-center  ${nightMode ? "bg-[#292929]" : "bg-blue-400"}  text-white transition-opacity duration-300 ease-in-out hover:opacity-0 relative w-full h-full p-4 rounded-3xl `}>
               {/* Logo at the top-left corner */}
               <div className="absolute top-4 left-4">
                 <img
