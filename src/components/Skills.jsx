@@ -83,7 +83,7 @@ function Skills({ nightMode }) {
       }  py-10 border-b-[1.5px] `}
     >
       <div className="pl-[5px] md:pl-[10px] mb-8">
-        <h1 className="text-3xl font-bold text-[#3E64FF] ml-2 md:ml-10 underline">
+        <h1 className="text-3xl cursor-default font-bold text-[#3E64FF] ml-2 md:ml-10 underline">
           Skills
         </h1>
       </div>
@@ -101,8 +101,8 @@ function Skills({ nightMode }) {
                   nightMode ? "text-gray-200" : "text-gray-700"
                 }  mb-1`}
               >
-                <h3 className="font-medium">{item.name}</h3>
-                <h3>{animatedPercents.linePercents[index].toFixed(0)}%</h3>
+                <h3 className="font-medium cursor-default">{item.name}</h3>
+                <h3 className=" cursor-default">{animatedPercents.linePercents[index].toFixed(0)}%</h3>
               </div>
               <div className="linebar">
                 <Line
@@ -127,7 +127,7 @@ function Skills({ nightMode }) {
               }  rounded-lg shadow-lg px-2 md:h-[270px] md:w-[135px] h-[250px] w-[120px]`}
             >
               <h2
-                className={`font-semibold ${
+                className={`font-semibold cursor-default ${
                   nightMode ? "text-gray-200" : "text-gray-700"
                 } `}
               >
@@ -143,7 +143,7 @@ function Skills({ nightMode }) {
                   className="w-20 h-20 md:w-24 md:h-24"
                 />
                 <span
-                  className={`absolute inset-0 flex items-center justify-center text-lg font-semibold ${nightMode ? "text-gray-200" : "text-gray-800"} `}
+                  className={`absolute cursor-default inset-0 flex items-center justify-center text-lg font-semibold ${nightMode ? "text-gray-200" : "text-gray-800"} `}
                 >
                   {animatedPercents.circlePercents[index].toFixed(0)}%
                 </span>

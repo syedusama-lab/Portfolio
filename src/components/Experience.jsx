@@ -77,7 +77,7 @@ function Experience({ nightMode }) {
           : "bg-gray-100 border-b-gray-300"
       } border-b-[1.5px] `}
     >
-      <h1 className="exp text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-[#3E64FF] underline">
+      <h1 className="exp cursor-default text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-[#3E64FF] underline">
         Experience
       </h1>
       <div className="relative w-full">
@@ -116,7 +116,7 @@ function Experience({ nightMode }) {
                   {data.company}
                 </h2>
                 <h3
-                  className={`${
+                  className={` cursor-default ${
                     nightMode ? "text-gray-400" : "text-gray-500"
                   }  text-xs sm:text-sm mt-1 sm:mt-0`}
                 >
@@ -127,14 +127,14 @@ function Experience({ nightMode }) {
                 <h2
                   className={`${
                     nightMode ? "text-gray-400" : "text-gray-500"
-                  } text-xs sm:text-sm mb-1 sm:mb-2`}
+                  } text-xs sm:text-sm mb-1 sm:mb-2 cursor-default`}
                 >
                   {data.date}
                 </h2>
-                <h1 className={`text-lg sm:text-xl font-semibold ${nightMode ? "text-gray-100" : "text-gray-800"}  mb-2`}>
+                <h1 className={` cursor-default text-lg sm:text-xl font-semibold ${nightMode ? "text-gray-100" : "text-gray-800"}  mb-2`}>
                   {data.designation}
                 </h1>
-                <ul className={`list-disc ml-4 sm:ml-5 space-y-1 ${nightMode ? "text-gray-300" : "text-gray-600"}  text-sm sm:text-base`}>
+                <ul className={`list-disc cursor-default ml-4 sm:ml-5 space-y-1 ${nightMode ? "text-gray-300" : "text-gray-600"}  text-sm sm:text-base`}>
                   {Object.values(data.working).map((work, idx) => (
                     <li
                       key={idx}

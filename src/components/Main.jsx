@@ -46,13 +46,13 @@ const Main = () => {
 
       {/* Child 3 */}
       <div className="child3 absolute top-0 left-0 w-full h-full leading-0 flex flex-col items-center justify-center text-center bg-transparent">
-        <h1 className="text-[20px] tracking-[0.1em] font-bold leading-[60px] text-[#3E64FF]">
+        <h1 className="text-[20px] tracking-[0.1em] font-bold leading-[60px] text-[#3E64FF] cursor-default">
           HEY! I AM
         </h1>
-        <h1 className="text-5xl font-extrabold tracking-[0.3em] ">
+        <h1 className="text-5xl font-extrabold tracking-[0.3em] cursor-default ">
           SYED USAMA
         </h1>
-        <h1 className="text-2xl leading-[60px]">
+        <h1 className="text-2xl leading-[60px] cursor-default">
           I'm a{" "}
           <span
             className="ml-2 font-semibold tracking-[0.1em] text-[#3E64FF]"

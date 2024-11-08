@@ -19,7 +19,7 @@ const ContactUs = ({ nightMode }) => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Contact Details */}
         <div className="flex flex-col space-y-4">
-          <h2 className="text-xl font-bold">Contact Us</h2>
+          <h2 className="text-xl cursor-default font-bold">Contact Us</h2>
           <p className="flex items-center space-x-3">
             <FaEnvelope />
             <a href="mailto:usamasyed237@gmail.com" className="hover:underline">
@@ -47,7 +47,7 @@ const ContactUs = ({ nightMode }) => {
 
         {/* Social Links */}
         <div className="flex flex-col space-y-4">
-          <h2 className="text-xl font-bold">Connect with Us</h2>
+          <h2 className="text-xl cursor-default font-bold">Connect with Us</h2>
           <div className="flex space-x-6">
             <a
               href="https://www.linkedin.com/in/syed-usama-186b22142/"
@@ -70,7 +70,7 @@ const ContactUs = ({ nightMode }) => {
 
         {/* Additional Links */}
         <div className="hidden md:block">
-          <h2 className="text-xl font-bold mb-3">Quick Links</h2>
+          <h2 className="text-xl font-bold cursor-default mb-3">Quick Links</h2>
           <ul className="space-y-2">
             <li>
               <a href="#about" className="hover:underline">
@@ -100,7 +100,7 @@ const ContactUs = ({ nightMode }) => {
           </ul>
         </div>
       </div>
-      <div className="text-center mt-6 text-gray-500 text-sm">
+      <div className="text-center mt-6 cursor-default text-gray-500 text-sm">
         © {new Date().getFullYear()} Syed Usama. All rights reserved.
       </div>
     </footer>

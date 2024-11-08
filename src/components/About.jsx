@@ -58,11 +58,11 @@ function About({ nightMode }) {
         />
       </div>
       <div className="summary text-center md:text-left w-11/12 md:w-2/3 lg:w-1/2 flex flex-col gap-4">
-        <h1 className="text-4xl font-bold text-[#3E64FF] underline">
+        <h1 className="text-4xl font-bold text-[#3E64FF] cursor-default underline">
           About Me
         </h1>
         <h5
-          className={`text-lg font-normal ${
+          className={`text-lg font-normal cursor-default ${
             nightMode ? "text-white" : "text-gray-600"
           } leading-relaxed`}
         >
@@ -76,15 +76,15 @@ function About({ nightMode }) {
           }`}
         >
           {data.map((item, index) => (
-            <div className="id_data flex items-center" key={index}>
+            <div className="id_data flex items-center " key={index}>
               <div
-                className={`font-bold ${
+                className={`font-bold cursor-default ${
                   nightMode ? "text-gray-400" : "text-gray-800"
                 }  `}
               >
                 {item.id}
               </div>
-              <div className="ml-2">{item.data}</div>
+              <div className="ml-2 cursor-default">{item.data}</div>
             </div>
           ))}
         </div>
