@@ -9,6 +9,7 @@ import {
   FaEnvelope,
   FaBars,
   FaTimes,
+  FaMoon,
 } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -80,19 +81,19 @@ const Navbar = ({ nightMode, setNightMode }) => {
               setNightModeFun();
             }}
           >
-            {nightMode ? <MdOutlineWbSunny /> : <MdSunny />}
+            {nightMode ? <MdOutlineWbSunny /> : <FaMoon />}
           </p>
         </div>
 
         {/* Hamburger Menu Icon for Mobile */}
         <div className="md:hidden flex items-center space-x-4">
-        <p
+          <p
             className="cursor-pointer ml-[-12px]"
             onClick={() => {
               setNightModeFun();
             }}
           >
-            {nightMode ? <MdOutlineWbSunny /> : <MdSunny />}
+            {nightMode ? <MdOutlineWbSunny /> : <FaMoon />}
           </p>
           <button onClick={toggleMenu} className="focus:outline-none">
             {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
