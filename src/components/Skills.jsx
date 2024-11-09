@@ -79,7 +79,7 @@ function Skills({ nightMode }) {
       className={`skills bg-gradient-to-b transition-colors duration-300 ease-in-out ${
         nightMode
           ? "bg-[#1F1F1F] border-b-gray-600"
-          : "bg-gray-100 border-b-gray-300"
+          : "bg-[#F9F6EE] border-b-gray-300"
       }  py-10 border-b-[1.5px] `}
     >
       <div className="pl-[5px] md:pl-[10px] mb-8">
@@ -91,7 +91,7 @@ function Skills({ nightMode }) {
       <div className="skill2 flex flex-col lg:flex-row gap-8 justify-center items-start px-2 lg:px-12">
         <div
           className={`skill_child1 w-full lg:w-1/2 space-y-6 ${
-            nightMode ? "bg-[#292929]" : "bg-white"
+            nightMode ? "bg-[#292929]" : "bg-[#F0EAD6]"
           }  p-3 rounded-xl`}
         >
           {skillsDataLine.map((item, index) => (
@@ -123,7 +123,7 @@ function Skills({ nightMode }) {
             <div
               key={index}
               className={`progressbarr1 flex justify-evenly flex-col items-center text-center ${
-                nightMode ? "bg-[#292929]" : "bg-white"
+                nightMode ? "bg-[#292929]" : "bg-[#F0EAD6]"
               }  rounded-lg shadow-lg px-2 md:h-[270px] md:w-[135px] h-[250px] w-[120px]`}
             >
               <h2

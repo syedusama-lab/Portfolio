@@ -47,7 +47,7 @@ function About({ nightMode }) {
       className={` about_parent flex flex-col md:flex-row items-center justify-center py-10 md:py-16 lg:py-20 gap-6 md:gap-12 border-b-[1.5px] transition-colors duration-300 ease-in-out ${
         nightMode
           ? "bg-[#1F1F1F] border-b-gray-600"
-          : "bg-gray-100 border-b-gray-300"
+          : "bg-[#F9F6EE] border-b-gray-300"
       }   `}
     >
       <div className="imagediv hidden md:block w-11/12 md:w-[50%] lg:w-[35%] lg:h-[60vh] rounded-lg overflow-hidden shadow-lg">

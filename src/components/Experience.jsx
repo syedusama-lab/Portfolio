@@ -74,7 +74,7 @@ function Experience({ nightMode }) {
       className={`exp_main flex flex-col px-[5%] md:px-[10%] py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-b transition-colors duration-300 ease-in-out ${
         nightMode
           ? "bg-[#1F1F1F] border-b-gray-600"
-          : "bg-gray-100 border-b-gray-300"
+          : "bg-[#F9F6EE] border-b-gray-300"
       } border-b-[1.5px] `}
     >
       <h1 className="exp cursor-default text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-[#3E64FF] underline">
@@ -104,7 +104,7 @@ function Experience({ nightMode }) {
             {/* Experience details */}
             <div
               className={`${
-                nightMode ? "bg-[#292929]" : "bg-white"
+                nightMode ? "bg-[#292929]" : "bg-[#E9DCC9]"
               }  rounded-lg shadow-lg w-full p-4 sm:p-6 border border-transparent bg-clip-padding bg-opacity-80`}
             >
               <div className="heading flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 sm:mb-4">

@@ -30,7 +30,7 @@ const Projects = ({ nightMode }) => {
       className={`transition-colors duration-300 ease-in-out ${
         nightMode
           ? "bg-[#1F1F1F] border-b-gray-600"
-          : "bg-gray-100 border-b-gray-300"
+          : "bg-[#F9F6EE] border-b-gray-300"
       } py-10 border-b-[1.5px]  w-full`}
     >
       <h2 className="text-3xl cursor-default font-bold text-[#3E64FF] px-3 lg:px-12 mb-8 underline">
