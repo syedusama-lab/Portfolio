@@ -56,10 +56,10 @@ function App() {
       onMouseUp={preventSelection}
       onKeyDown={handleKeyDown}
       style={noSelectStyle}
-      className="App mt-14"
+      className="App"
     >
       <Navbar nightMode={nightMode} setNightMode={setNightMode} />
-      <Main />
+      <Main nightMode={nightMode}/>
       <About nightMode={nightMode} />
       <Experience nightMode={nightMode} />
       <Skills nightMode={nightMode} />

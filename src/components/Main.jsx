@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-const Main = () => {
+const Main = ({ nightMode }) => {
   const typingRef = useRef(null);
   const textToType = "Software Engineer"; // Text to be typed out
 
@@ -37,23 +37,41 @@ const Main = () => {
   }, [textToType]);
 
   return (
-    <div id="#main" className="flex relative h-[calc(100vh-64px)]">
+    <div id="#main" className="flex relative h-[calc(100vh-24px)]">
       {/* Child 1 */}
-      <div className="child1 w-1/2 bg-[#eceffe]"></div>
+      <div
+        className={`child1 w-1/2 transition-colors duration-300 ease-in-out  ${
+          nightMode ? "bg-[#282828]" : "bg-[#eceffe]"
+        } `}
+      ></div>
 
       {/* Child 2 */}
-      <div className="child2 w-1/2 bg-white"></div>
+      <div
+        className={`child2 w-1/2 transition-colors duration-300 ease-in-out  ${
+          nightMode ? "bg-[#404040]" : "bg-white"
+        } `}
+      ></div>
 
       {/* Child 3 */}
       <div className="child3 absolute top-0 left-0 w-full h-full leading-0 flex flex-col items-center justify-center text-center bg-transparent">
         <h1 className="text-[20px] tracking-[0.1em] font-bold leading-[60px] text-[#3E64FF] cursor-default">
           HEY! I AM
         </h1>
-        <h1 className="text-5xl font-extrabold tracking-[0.3em] cursor-default ">
+        <h1
+          className={`text-5xl font-extrabold tracking-[0.3em] cursor-default transition-colors duration-300 ease-in-out ${
+            nightMode ? "text-[#d8d3d3]" : "text-black"
+          } `}
+        >
           SYED USAMA
         </h1>
         <h1 className="text-2xl leading-[60px] cursor-default">
-          I'm a{" "}
+          <span
+            className={`transition-colors duration-300 ease-in-out ${
+              nightMode ? "text-[#d8d3d3]" : "text-black"
+            }`}
+          >
+            I'm a
+          </span>
           <span
             className="ml-2 font-semibold tracking-[0.1em] text-[#3E64FF]"
             ref={typingRef}
