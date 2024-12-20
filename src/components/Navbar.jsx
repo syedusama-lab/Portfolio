@@ -45,7 +45,9 @@ const Navbar = ({ nightMode, setNightMode }) => {
   return (
     <nav
       className={`nav fixed top-0 md:top-2 md:left-[1%] w-full md:w-[98%] md:rounded-xl transition-colors duration-300 ease-in-out ${
-        nightMode ? "bg-[#1F1F1F] text-white border border-black" : "bg-[#F9F6EE] border border-[#e3dfd6] text-black"
+        nightMode
+          ? "bg-[#1F1F1F] text-white border border-black"
+          : "bg-[#F9F6EE] border border-[#e3dfd6] text-black"
       }   p-2 shadow-md z-50`}
     >
       <div className="mx-auto flex justify-between items-center md:pr-2 lg:pr-8 font-bold">
@@ -104,18 +106,26 @@ const Navbar = ({ nightMode, setNightMode }) => {
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-gray-200 text-gray-800 font-medium p-4 space-y-2 absolute top-full left-0 w-full shadow-lg rounded-b-2xl ">
+        <div
+          className={`md:hidden ${
+            nightMode ? "bg-[#282828] text-white" : "bg-[#d8d2bf] text-black"
+          }  font-medium p-4 space-y-2 absolute top-full left-0 w-full shadow-lg rounded-b-2xl`}
+        >
           {aboutData.map((item, index) => (
-            <a
-              key={index}
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection(item.link);
-              }}
-              className="flex items-center pl-2 space-x-3 hover:text-gray-600 cursor-pointer"
-            >
-              {item.img}
-              <span>{item.name}</span>
+            <a key={index} className={`flex items-center`}>
+              <span
+                className={`cursor-pointer flex items-center pl-2 space-x-3 ${
+                  nightMode ? "hover:text-gray-400" : "hover:text-gray-500"
+                }`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(item.link);
+                }}
+              >
+                {" "}
+                {item.img}
+                <span>{item.name}</span>
+              </span>
             </a>
           ))}
         </div>
