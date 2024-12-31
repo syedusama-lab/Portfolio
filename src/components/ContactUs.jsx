@@ -19,7 +19,7 @@ const ContactUs = ({ nightMode }) => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Contact Details */}
         <div className="flex flex-col space-y-4">
-          <h2 className="text-xl cursor-default font-bold">Contact Us</h2>
+          <h2 className="text-xl cursor-default font-bold">Contact</h2>
           <p className="flex items-center space-x-3">
             <FaEnvelope />
             <a href="mailto:usamasyed237@gmail.com" className="hover:underline">
@@ -47,13 +47,13 @@ const ContactUs = ({ nightMode }) => {
 
         {/* Social Links */}
         <div className="flex flex-col space-y-4">
-          <h2 className="text-xl cursor-default font-bold">Connect with Us</h2>
+          <h2 className="text-xl cursor-default font-bold">Connect with Me</h2>
           <div className="flex space-x-6">
             <a
               href="https://www.linkedin.com/in/syed-usama-186b22142/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`${nightMode ? "text-white" : "text-black"}  hover:text-blue-500 transition-colors`}
+              className={`${nightMode ? "text-blue-600" : "text-blue-600"}  hover:text-blue-700 transition-colors`}
             >
               <FaLinkedin size={24} />
             </a>
